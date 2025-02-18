@@ -23,6 +23,8 @@ def fib(n: int):
 	
     return fib(n-1) + fib(n-2)
 
+
+
 t1 = time.time()
 result = fib_hashMemo(17)
 t2 = time.time()
@@ -33,3 +35,4 @@ result = fib(17)
 t4 = time.time()
 
 print(f"Normal fib result: {result}, difference in time = {t4- t3}")
+print(f"efficiency: {(t4-t3)/(t2-t1)*100}% speedup")
